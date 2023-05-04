@@ -1,0 +1,154 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: relative; /* родитель блока с описанием компании, т.е. блок с логотипом */
+}
+
+nav {
+    height: 51px;
+    background-color: #212121;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px;
+    margin: 0; /* убрали внешний отступ снизу */
+    list-style-type: none;
+    /* расположили элементы меню по горизонтали */
+}
+
+/* .menu .menu_link a {
+    text-decoration: none;
+} */
+
+/* .menu .menu_item .menu_link a:hover {
+    text-decoration: underline;
+    color: blue;
+} */
+
+.menu .menu_link {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+    /* стилизовали текст ссылок */
+}
+
+.menu .menu_item {
+    border-right: 2px dotted black;
+    padding-right: 28px;
+    /* создали разделитель меню аналогичный такому в дизайн-макете */
+}
+
+.subheader {
+    position: absolute; /* дочка */
+    width: 100%; /* блок будет по ширине родителя */
+    /* задвинули блок с описанием компании под блок с логотипом */
+    height: 84px;
+    background-color: rgba(0, 0, 0, .6);  
+    /* вместо opacity использовали регулировку цвета через rgba иначе все элементы в блоке будут прозрачными */ 
+}
+
+.subheader .subheader_logo {
+    display: block; /* перевели в блок, чтобы работали отступы */
+    max-width: 100%;
+    /* если логотип поменяется то он не выйдет за края колонки и ссылка будет активна */
+    margin-top: 16px;
+}
+
+.subheader .subheader_official {
+    margin-top: 6px;
+    opacity: 0.5;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.subheader .subheader_call {
+    margin-top: 19px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: right;
+}
+
+.subheader .subheader_phone {
+    display: block;
+    margin-top: 8px;
+    color: #ffffff;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: right;
+    line-height: 12px;
+}
+
+.subheader .subheader_btn {
+    margin-top: 19px;
+    width: 172px;
+    height: 46px;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 4px;
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.promo {
+    min-height: 800px;
+    background: url('../img/car_door.png') center center/cover no-repeat;
+    padding: 150px 0 130px 0;
+}
+
+.promo .promo_header {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 60px;
+    margin: 0;
+    text-align: center;
+}
+
+.promo .promo_subheader {    
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 36px;
+    margin: 0;
+    margin-top: 22px;
+    text-align: center;
+}
+
+.promo .promo_descr {
+    margin-top: 23px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.promo .promo_btn {
+    display: block;
+    margin: 118px auto 0 auto;
+    width: 259px;
+    height: 63px;
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 4px;
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
