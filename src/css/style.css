@@ -153,9 +153,13 @@ nav {
     text-transform: uppercase;
 }
 
+.advantages {
+    margin: 71px 0 65px 0;
+}
+
 .advantages .advantages_btn {
     display: block;
-    margin: 71px auto 0 auto;
+    margin: 0 auto;
     padding-top: 3px;
     width: 112px;
     height: 24px;
@@ -174,4 +178,40 @@ nav {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+}
+
+.advantages .advantages_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.advantages .advantages_item .advantages_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 26px;
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 100%;
+}
+
+.advantages .advantages_item .advantages_descr {
+    width: 342px;
+}
+
+.advantages .advantages_item .advantages_descr .advantages_header {
+    line-height: 21px;
+    color: #1eacc7;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.advantages .advantages_item .advantages_descr .advantages_text {
+    color: #202020;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
 }
