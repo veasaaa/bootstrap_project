@@ -3,7 +3,7 @@
 }
 
 header {
-    position: relative; /* родитель блока с описанием компании, т.е. блок с логотипом */
+    position: relative;
 }
 
 nav {
@@ -15,19 +15,9 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 13px 70px;
-    margin: 0; /* убрали внешний отступ снизу */
+    margin: 0;
     list-style-type: none;
-    /* расположили элементы меню по горизонтали */
 }
-
-/* .menu .menu_link a {
-    text-decoration: none;
-} */
-
-/* .menu .menu_item .menu_link a:hover {
-    text-decoration: underline;
-    color: blue;
-} */
 
 .menu .menu_link {
     color: #ffffff;
@@ -40,22 +30,18 @@ nav {
 .menu .menu_item {
     border-right: 2px dotted black;
     padding-right: 28px;
-    /* создали разделитель меню аналогичный такому в дизайн-макете */
 }
 
 .subheader {
-    position: absolute; /* дочка */
-    width: 100%; /* блок будет по ширине родителя */
-    /* задвинули блок с описанием компании под блок с логотипом */
+    position: absolute;
+    width: 100%;
     height: 84px;
-    background-color: rgba(0, 0, 0, .6);  
-    /* вместо opacity использовали регулировку цвета через rgba иначе все элементы в блоке будут прозрачными */ 
+    background-color: rgba(0, 0, 0, .6);
 }
 
 .subheader .subheader_logo {
-    display: block; /* перевели в блок, чтобы работали отступы */
+    display: block;
     max-width: 100%;
-    /* если логотип поменяется то он не выйдет за края колонки и ссылка будет активна */
     margin-top: 16px;
 }
 
