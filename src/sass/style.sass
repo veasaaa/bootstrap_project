@@ -1,3 +1,10 @@
+$main-color: #1eacc7
+$second-color: #ff5656
+@mixin btn_hover
+	&:hover
+		background-image: none
+		background-color: $main-color
+
 * 
 	font-family: 'Roboto', sans-serif 
 header 
@@ -65,7 +72,9 @@ nav
 		color: #ffffff 
 		font-size: 14px 
 		font-weight: 400 
-		text-transform: uppercase 
+		text-transform: uppercase
+		@include btn_hover
+		
 .promo 
 	min-height: 800px 
 	background: url('../img/car_door.png') center center/cover no-repeat 
@@ -108,6 +117,7 @@ nav
 		font-size: 18px 
 		font-weight: 400 
 		text-transform: uppercase 
+		@include btn_hover
 .reasons 
 	padding: 71px 0 65px 0 
 	.reasons_block 
@@ -216,6 +226,26 @@ nav
 			margin: 0 auto
 			border-radius: 100%
 			cursor: pointer
+			&:before
+				content: ''
+				display: block
+				width: 14px
+				height: 2px
+				background-color: $main-color
+				transition: 0.3s all
+			&:after
+				content: ''
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				display: block
+				height: 14px
+				width: 2px
+				background-color: $main-color
+				transition: 0.3s all
+			&:hover
+				&:before, &:after
+					background-color: $second-color
 .choice
 	min-height: 896px
 	padding: 57px 0 138px 0
@@ -232,3 +262,7 @@ nav
 		font-weight: 300
 		line-height: 24px
 		text-align: center
+.require
+	padding: 68px 0 84px 0
+	&_block
+		margin: 33px 0
